@@ -1,0 +1,50 @@
+## 归档规则配置和归档任务的DB地址
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/smart_transport?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT&allowMultiQueries=true
+    username: smlkcap
+    password: Rx1Tfq3NpkRHCz98aEyN1eKioDR1OMlj
+    max-active: 100
+
+archive:
+  ## pt-archiver 程序的安装路径
+  pt-archiver-path: /opt/homebrew/bin
+  ## datax程序的安装路径
+  datax-path: /Users/pengcheng/Downloads/datax
+  ### 业务数据库和归档数据库都需要创建一个归档账号
+  ## 归档账号
+  archive-user: smlkcap
+  ## 归档密码
+  archive-pwd: Rx1Tfq3NpkRHCz98aEyN1eKioDR1OMlj
+  archive-config:
+    ## 批量每次归档的数据数量
+    batch-size: 20000
+    ## 指定每个事务的大小（行数）
+    txn-size: 1000
+  archive-to-file-config:
+    ## 归档为文件时，文件的存放路径
+    archive-file-path: /Users/pengcheng
+    write-mode: truncate
+    batch-size: 20000
+    txn-size: 500
+  delete-config:
+    batch-size: 20000
+    txn-size: 1000
+
+tdengine:
+  ## datax程序的安装路径
+  datax-path: /Users/pengcheng/Downloads/datax
+  archive-user: root
+  archive-pwd: kA7zfTpd2T
+  tdengine-config:
+    batch-size: 1000
+    ignore-tags-unmatched: false
+  tdengine-to-file-config:
+    write-mode: truncate
+    date-format: yyyy-MM-dd HH:mm:ss
+    archive-file-path: /Users/pengcheng/Downloads/datax/bin
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml

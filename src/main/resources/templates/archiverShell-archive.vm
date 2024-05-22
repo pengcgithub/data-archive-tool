@@ -1,0 +1,10 @@
+${ptArchiverPath}/pt-archiver \
+--source h=${sourceHost},u=${archiveUser},p=${archivePwd},P=${sourcePort},D=${sourceDb},t=${sourceTable} \
+--dest h=${destHost},P=${destPort},u=${archiveUser},p=${archivePwd},D=${destDb},t=${destTable} \
+--progress ${batchSize} --where "${archiveCondition}"  --statistics \
+#if($charset.equalsIgnoreCase("none") || !$charset)
+--no-check-charset \
+#else
+--charset=${charset} \
+#end
+--limit=${batchSize} --txn-size ${txnSize}  ${archiveModeEnum} --replace ${extensionCmd} \

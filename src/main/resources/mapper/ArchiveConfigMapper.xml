@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smartlink.archive.infrastructure.db.mapper.ArchiveConfigMapper">
+
+    <resultMap id="BaseResultMap" type="com.smartlink.archive.infrastructure.db.entity.ArchiveConfigEntity">
+        <id property="id" column="id" jdbcType="INTEGER"/>
+        <result property="sourceHost" column="source_host" jdbcType="VARCHAR"/>
+        <result property="sourcePort" column="source_port" jdbcType="INTEGER"/>
+        <result property="sourceDb" column="source_db" jdbcType="VARCHAR"/>
+        <result property="sourceTable" column="source_table" jdbcType="VARCHAR"/>
+        <result property="destHost" column="dest_host" jdbcType="VARCHAR"/>
+        <result property="destPort" column="dest_port" jdbcType="INTEGER"/>
+        <result property="destDb" column="dest_db" jdbcType="VARCHAR"/>
+        <result property="destTable" column="dest_table" jdbcType="VARCHAR"/>
+        <result property="archiveMode" column="archive_mode" jdbcType="VARCHAR"/>
+        <result property="charset" column="charset" jdbcType="VARCHAR"/>
+        <result property="archiveCondition" column="archive_condition" jdbcType="VARCHAR"/>
+        <result property="execTimeWindowCron" column="exec_time_window_cron" jdbcType="VARCHAR"/>
+        <result property="extensionCmd" column="extension_cmd" jdbcType="VARCHAR"/>
+        <result property="priority" column="priority" jdbcType="TINYINT"/>
+        <result property="sysCtime" column="sys_ctime" jdbcType="TIMESTAMP"/>
+        <result property="sysUtime" column="sys_utime" jdbcType="TIMESTAMP"/>
+        <result property="isEnable" column="is_deleted" jdbcType="INTEGER"/>
+        <result property="remark" column="remark" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,
+        source_host,
+        source_port,
+        source_db,
+        source_table,
+        dest_host,
+        dest_port,
+        dest_db,
+        dest_table,
+        archive_mode,
+        charset,
+        archive_condition,
+        exec_time_window_cron,
+        extension_cmd,
+        priority,
+        sys_ctime,
+        sys_utime,
+        is_enable,
+        remark
+    </sql>
+</mapper>

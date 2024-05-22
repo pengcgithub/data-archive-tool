@@ -1,0 +1,51 @@
+{
+    "job":
+    {
+        "content":
+        [
+            {
+                "reader":
+                {
+                    "name": "mysqlreader",
+                    "parameter":
+                    {
+                        "username": "${archiveUser}",
+                        "password": "${archivePwd}",
+                        "connection":
+                        [
+                            {
+                                #if(!$querySql)
+                                "table": ["${sourceTable}"],
+                                #else
+                                "querySql": ["${querySql}"],
+                                #end
+                                "jdbcUrl":
+                                [
+                                    "jdbc:mysql://${sourceHost}:${sourcePort}/${sourceDb}?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "writer": {
+                    "name": "txtfilewriter",
+                    "parameter": {
+                        "path": "${archiveFilePath}",
+                        "fileName": "${writeFileName}",
+                        "writeMode": "${writeMode}",
+                        "dateFormat": "yyyy-MM-dd HH:mm:ss",
+                        "fileFormat": "${fileFormat}",
+                        "nullFormat": "\\N"
+                    }
+                }
+            }
+        ],
+        "setting":
+        {
+            "speed":
+            {
+                "channel": 3
+            }
+        }
+    }
+}

@@ -1,0 +1,3 @@
+${ptArchiverPath}/pt-archiver \
+--source h=${sourceHost},u=${archiveUser},p=${archivePwd},P=${sourcePort},D=${sourceDb},t=${sourceTable} \
+--progress ${batchSize} --where "${archiveCondition}"  --statistics --charset=${charset} --limit=${batchSize} --txn-size ${txnSize} ${archiveModeEnum} ${extensionCmd} \

@@ -1,0 +1,21 @@
+14:39:42.054 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.6.Final
+14:39:42.082 [main] INFO  c.s.a.DataArchiveToolApplication - [logStarting,55] - Starting DataArchiveToolApplication on pengchengdeMacBook-Pro.local with PID 52480 (/Users/pengcheng/code/idea/framework/data-archive-tool-main/target/classes started by pengcheng in /Users/pengcheng/code/idea/framework/data-archive-tool-main)
+14:39:42.084 [main] INFO  c.s.a.DataArchiveToolApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+14:39:43.585 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+14:39:43.586 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:39:43.586 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+14:39:43.680 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:39:44.741 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+14:39:44.779 [main] INFO  c.s.a.DataArchiveToolApplication - [logStarted,61] - Started DataArchiveToolApplication in 3.151 seconds (JVM running for 4.592)
+14:40:00.015 [scheduling-1] INFO  c.s.a.t.ExecuteArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始执行归档任务
+14:40:00.168 [scheduling-1] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+14:40:00.918 [scheduling-1] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+14:40:01.091 [scheduling-1] INFO  c.s.a.t.e.ExecuteArchiveTasksService - [executeArchiveTasks,46] - [BIZ] 当前没有需要执行的归档任务
+14:40:01.092 [scheduling-1] INFO  c.s.a.t.ExecuteArchiveTasksScheduling - [running,28] - [BIZ] >>>>>>>>>>>>>>>> 执行归档任务完成
+14:40:01.093 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+14:41:00.005 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+14:42:00.006 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+14:43:00.004 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+14:44:00.004 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+14:44:41.518 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+14:44:41.538 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.

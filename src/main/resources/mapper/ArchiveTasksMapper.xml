@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smartlink.archive.infrastructure.db.mapper.ArchiveTasksMapper">
+
+    <resultMap id="BaseResultMap" type="com.smartlink.archive.infrastructure.db.entity.ArchiveTasksEntity">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="sourceHost" column="source_host" jdbcType="VARCHAR"/>
+            <result property="sourcePort" column="source_port" jdbcType="INTEGER"/>
+            <result property="sourceDb" column="source_db" jdbcType="VARCHAR"/>
+            <result property="sourceTable" column="source_table" jdbcType="VARCHAR"/>
+            <result property="destHost" column="dest_host" jdbcType="VARCHAR"/>
+            <result property="destPort" column="dest_port" jdbcType="INTEGER"/>
+            <result property="destDb" column="dest_db" jdbcType="VARCHAR"/>
+            <result property="destTable" column="dest_table" jdbcType="VARCHAR"/>
+            <result property="archiveMode" column="archive_mode" jdbcType="VARCHAR"/>
+            <result property="priority" column="priority" jdbcType="TINYINT"/>
+            <result property="execStatus" column="exec_status" jdbcType="VARCHAR"/>
+            <result property="execStart" column="exec_start" jdbcType="TIMESTAMP"/>
+            <result property="execEnd" column="exec_end" jdbcType="TIMESTAMP"/>
+            <result property="execSeconds" column="exec_seconds" jdbcType="INTEGER"/>
+            <result property="archiveCmd" column="archive_cmd" jdbcType="VARCHAR"/>
+            <result property="execLog" column="exec_log" jdbcType="VARCHAR"/>
+            <result property="sysUtime" column="sys_utime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,
+        source_host,
+        source_port,
+        source_db,
+        source_table,
+        dest_host,
+        dest_port,
+        dest_db,
+        dest_table,
+        archive_mode,
+        priority,
+        exec_status,
+        exec_start,
+        exec_end,
+        exec_seconds,
+        archive_cmd,
+        exec_log,
+        sys_utime
+    </sql>
+</mapper>

@@ -1,0 +1,504 @@
+14:37:18.659 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.6.Final
+14:37:18.679 [main] INFO  c.s.a.DataArchiveToolApplication - [logStarting,55] - Starting DataArchiveToolApplication on pengchengdeMacBook-Pro.local with PID 34931 (/Users/pengcheng/code/idea/framework/data-archive-tool-main/target/classes started by pengcheng in /Users/pengcheng/code/idea/framework/data-archive-tool-main)
+14:37:18.681 [main] INFO  c.s.a.DataArchiveToolApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+14:37:20.249 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+14:37:20.251 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:37:20.251 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+14:37:20.325 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:37:21.368 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+14:37:21.404 [main] INFO  c.s.a.DataArchiveToolApplication - [logStarted,61] - Started DataArchiveToolApplication in 3.119 seconds (JVM running for 3.91)
+14:38:00.002 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+14:38:00.056 [scheduling-1] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+14:38:00.624 [scheduling-1] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+14:39:00.005 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+14:40:00.010 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+14:41:00.007 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+14:42:00.004 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+14:43:00.021 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+14:43:11.308 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:43:12.375 [http-nio-8080-exec-1] INFO  c.s.a.t.g.GenerateArchiveTasksService - [generateArchiveTasks,84] - [BIZ] >>>>>>>>>>>>>>>> 成功生成3个归档任务
+14:44:00.007 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+14:45:00.006 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+14:46:00.006 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+14:47:00.008 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+14:48:00.000 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+14:49:00.010 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+14:50:00.005 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+14:50:26.067 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+14:50:26.083 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+14:50:34.990 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.6.Final
+14:50:35.015 [main] INFO  c.s.a.DataArchiveToolApplication - [logStarting,55] - Starting DataArchiveToolApplication on pengchengdeMacBook-Pro.local with PID 35749 (/Users/pengcheng/code/idea/framework/data-archive-tool-main/target/classes started by pengcheng in /Users/pengcheng/code/idea/framework/data-archive-tool-main)
+14:50:35.018 [main] INFO  c.s.a.DataArchiveToolApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+14:50:36.553 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+14:50:36.555 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:50:36.555 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+14:50:36.614 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:50:37.641 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+14:50:37.676 [main] INFO  c.s.a.DataArchiveToolApplication - [logStarted,61] - Started DataArchiveToolApplication in 3.054 seconds (JVM running for 3.899)
+14:51:00.009 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+14:51:00.050 [scheduling-1] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+14:51:00.603 [scheduling-1] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+14:51:15.258 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:52:00.004 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+14:52:26.876 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+14:52:26.899 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+14:52:35.054 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.6.Final
+14:52:35.102 [main] INFO  c.s.a.DataArchiveToolApplication - [logStarting,55] - Starting DataArchiveToolApplication on pengchengdeMacBook-Pro.local with PID 35874 (/Users/pengcheng/code/idea/framework/data-archive-tool-main/target/classes started by pengcheng in /Users/pengcheng/code/idea/framework/data-archive-tool-main)
+14:52:35.104 [main] INFO  c.s.a.DataArchiveToolApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+14:52:36.681 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+14:52:36.683 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:52:36.683 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+14:52:36.746 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:52:37.814 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+14:52:37.852 [main] INFO  c.s.a.DataArchiveToolApplication - [logStarted,61] - Started DataArchiveToolApplication in 3.275 seconds (JVM running for 4.075)
+14:52:47.309 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:52:47.500 [http-nio-8080-exec-2] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+14:52:48.043 [http-nio-8080-exec-2] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+14:53:00.016 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+14:54:00.011 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+14:54:50.444 [http-nio-8080-exec-5] INFO  c.s.a.t.g.GenerateArchiveTasksService - [generateArchiveTasks,84] - [BIZ] >>>>>>>>>>>>>>>> 成功生成1个归档任务
+14:55:00.007 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+14:56:00.013 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+14:57:00.021 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+14:58:00.001 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+14:59:00.006 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:00:00.006 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:00:48.703 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+15:00:58.327 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.6.Final
+15:00:58.360 [main] INFO  c.s.a.DataArchiveToolApplication - [logStarting,55] - Starting DataArchiveToolApplication on pengchengdeMacBook-Pro.local with PID 36355 (/Users/pengcheng/code/idea/framework/data-archive-tool-main/target/classes started by pengcheng in /Users/pengcheng/code/idea/framework/data-archive-tool-main)
+15:00:58.362 [main] INFO  c.s.a.DataArchiveToolApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+15:01:00.004 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+15:01:00.005 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+15:01:00.005 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+15:01:00.073 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+15:01:01.201 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+15:01:01.236 [main] INFO  c.s.a.DataArchiveToolApplication - [logStarted,61] - Started DataArchiveToolApplication in 3.397 seconds (JVM running for 4.281)
+15:02:00.008 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:02:00.061 [scheduling-1] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+15:02:00.783 [scheduling-1] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+15:03:00.010 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:03:16.221 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:03:16.429 [http-nio-8080-exec-2] INFO  c.s.a.t.e.ExecuteArchiveTasksService - [executeArchiveTasks,50] - [BIZ] 扫描到3条，需要执行的归档任务
+15:03:17.251 [ForkJoinPool.commonPool-worker-2] INFO  c.s.a.t.e.ShellCommandActuator - [execCmd,146] - [BIZ] 开始执行Shell脚本：shellCmd:sh -c /Users/pengcheng/code/idea/framework/data-archive-tool-main/shell/302bf32a-0edb-4c4d-a49e-d4f09b762b3e39.sh
+15:03:17.257 [ForkJoinPool.commonPool-worker-1] INFO  c.s.a.t.e.ShellCommandActuator - [execCmd,146] - [BIZ] 开始执行Shell脚本：shellCmd:sh -c /Users/pengcheng/code/idea/framework/data-archive-tool-main/shell/25c1e5c8-76fc-4c27-b665-9aab4c330afd15.sh
+15:03:17.257 [ForkJoinPool.commonPool-worker-3] INFO  c.s.a.t.e.ShellCommandActuator - [execCmd,146] - [BIZ] 开始执行Shell脚本：shellCmd:sh -c /Users/pengcheng/code/idea/framework/data-archive-tool-main/shell/973dd237-b83b-4ec2-ae1a-c38be736de6288.sh
+15:03:17.630 [ForkJoinPool.commonPool-worker-3] INFO  c.s.a.t.e.ExecuteArchiveTasksService - [executeShellCmd,120] - [BIZ] 任务ID102,已经执行完成，执行结果：ERROR，持续时间：0.338687583，执行日志：
+cn.hutool.core.io.IORuntimeException: /System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python: can't open file 'null/bin/datax.py': [Errno 2] No such file or directory
+
+15:03:17.729 [ForkJoinPool.commonPool-worker-2] INFO  c.s.a.t.e.ExecuteArchiveTasksService - [executeShellCmd,120] - [BIZ] 任务ID101,已经执行完成，执行结果：ERROR，持续时间：0.361941542，执行日志：
+cn.hutool.core.io.IORuntimeException: Can't load '/opt/homebrew/Cellar/percona-toolkit/3.5.5_2/libexec/lib/perl5/darwin-thread-multi-2level/auto/DBI/DBI.bundle' for module DBI: dlopen(/opt/homebrew/Cellar/percona-toolkit/3.5.5_2/libexec/lib/perl5/darwin-thread-multi-2level/auto/DBI/DBI.bundle, 0x0001): tried: '/opt/homebrew/Cellar/percona-toolkit/3.5.5_2/libexec/lib/perl5/darwin-thread-multi-2level/auto/DBI/DBI.bundle' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64')), '/usr/lib/DBI.bundle' (no such file) at /System/Library/Perl/5.30/darwin-thread-multi-2level/DynaLoader.pm line 197.
+  at /opt/homebrew/Cellar/percona-toolkit/3.5.5_2/libexec/lib/perl5/darwin-thread-multi-2level/DBI.pm line 284.
+BEGIN failed--compilation aborted at /opt/homebrew/Cellar/percona-toolkit/3.5.5_2/libexec/lib/perl5/darwin-thread-multi-2level/DBI.pm line 284.
+Compilation failed in require at /opt/homebrew/Cellar/percona-toolkit/3.5.5_2/libexec/bin/pt-archiver line 6171.
+BEGIN failed--compilation aborted at /opt/homebrew/Cellar/percona-toolkit/3.5.5_2/libexec/bin/pt-archiver line 6171.
+
+15:03:30.425 [ForkJoinPool.commonPool-worker-1] INFO  c.s.a.t.e.ExecuteArchiveTasksService - [executeShellCmd,120] - [BIZ] 任务ID100,已经执行完成，执行结果：SUCCESS，持续时间：13.088381208，执行日志：
+
+DataX (DATAX-OPENSOURCE-3.0), From Alibaba !
+Copyright (C) 2010-2017, Alibaba Group. All Rights Reserved.
+
+
+2024-05-08 15:03:19.655 [main] INFO  MessageSource - JVM TimeZone: GMT+08:00, Locale: zh_CN
+2024-05-08 15:03:19.659 [main] INFO  MessageSource - use Locale: zh_CN timeZone: sun.util.calendar.ZoneInfo[id="GMT+08:00",offset=28800000,dstSavings=0,useDaylight=false,transitions=0,lastRule=null]
+2024-05-08 15:03:19.706 [main] INFO  VMInfo - VMInfo# operatingSystem class => sun.management.OperatingSystemImpl
+2024-05-08 15:03:19.724 [main] INFO  Engine - the machine info  => 
+
+	osInfo:	Mac OS X x86_64 10.16
+	jvmInfo:	Oracle Corporation 1.8 25.211-b12
+	cpu num:	8
+
+	totalPhysicalMemory:	-0.00G
+	freePhysicalMemory:	-0.00G
+	maxFileDescriptorCount:	-1
+	currentOpenFileDescriptorCount:	-1
+
+	GC Names	[PS MarkSweep, PS Scavenge]
+
+	MEMORY_NAME                    | allocation_size                | init_size                      
+	PS Eden Space                  | 256.00MB                       | 256.00MB                       
+	Code Cache                     | 240.00MB                       | 2.44MB                         
+	Compressed Class Space         | 1,024.00MB                     | 0.00MB                         
+	PS Survivor Space              | 42.50MB                        | 42.50MB                        
+	PS Old Gen                     | 683.00MB                       | 683.00MB                       
+	Metaspace                      | -0.00MB                        | 0.00MB                         
+
+
+2024-05-08 15:03:19.739 [main] INFO  Engine - 
+{
+	"content":[
+		{
+			"reader":{
+				"name":"tdengine20reader",
+				"parameter":{
+					"username":"root",
+					"password":"**********",
+					"column":[
+						"create_time",
+						"terminal_id",
+						"alarm_id",
+						"driver_name"
+					],
+					"beginDateTime":"2024-04-01 00:00:00",
+					"endDateTime":"2024-05-01 00:00:00",
+					"connection":[
+						{
+							"table":[
+								"safety_alarm"
+							],
+							"jdbcUrl":[
+								"jdbc:TAOS-RS://172.29.30.145:6041/safety_center?timestampFormat=TIMESTAMP"
+							]
+						}
+					]
+				}
+			},
+			"writer":{
+				"name":"txtfilewriter",
+				"parameter":{
+					"path":"/Users/pengcheng/Downloads/datax/bin",
+					"fileName":"safety_center-safety_alarm-20240401000000-20240501000000",
+					"writeMode":"truncate",
+					"dateFormat":"yyyy-MM-dd HH:mm:ss",
+					"fileFormat":"csv",
+					"nullFormat":"\\N"
+				}
+			}
+		}
+	],
+	"setting":{
+		"speed":{
+			"channel":1
+		}
+	}
+}
+
+2024-05-08 15:03:19.763 [main] INFO  PerfTrace - PerfTrace traceId=job_-1, isEnable=false
+2024-05-08 15:03:19.763 [main] INFO  JobContainer - DataX jobContainer starts job.
+2024-05-08 15:03:19.768 [main] INFO  JobContainer - Set jobId = 0
+2024-05-08 15:03:19.918 [job-0] INFO  JobContainer - jobContainer starts to do prepare ...
+2024-05-08 15:03:19.921 [job-0] INFO  JobContainer - DataX Reader.Job [tdengine20reader] do prepare work .
+2024-05-08 15:03:19.922 [job-0] INFO  JobContainer - DataX Writer.Job [txtfilewriter] do prepare work .
+2024-05-08 15:03:19.924 [job-0] INFO  TxtFileWriter$Job - 由于您配置了writeMode truncate, 开始清理 [/Users/pengcheng/Downloads/datax/bin] 下面以 [safety_center-safety_alarm-20240401000000-20240501000000] 开头的内容
+2024-05-08 15:03:19.934 [job-0] INFO  JobContainer - jobContainer starts to do split ...
+2024-05-08 15:03:19.938 [job-0] INFO  JobContainer - Job set Channel-Number to 1 channels.
+2024-05-08 15:03:19.940 [job-0] INFO  TDengineReader$Job - Configuration: [{"username":"root","password":"kA7zfTpd2T","column":["create_time","terminal_id","alarm_id","driver_name"],"beginDateTime":"2024-04-01 00:00:00","endDateTime":"2024-05-01 00:00:00","jdbcUrl":"jdbc:TAOS-RS://172.29.30.145:6041/safety_center?timestampFormat=TIMESTAMP","table":["safety_alarm"]}]
+2024-05-08 15:03:19.940 [job-0] INFO  JobContainer - DataX Reader.Job [tdengine20reader] splits to [1] tasks.
+2024-05-08 15:03:19.941 [job-0] INFO  TxtFileWriter$Job - begin do split...
+2024-05-08 15:03:20.045 [job-0] INFO  TxtFileWriter$Job - splited write file name:[safety_center-safety_alarm-20240401000000-20240501000000__8f790bd7_bf9f_4818_89b0_96b3e07ce32d]
+2024-05-08 15:03:20.045 [job-0] INFO  TxtFileWriter$Job - end do split.
+2024-05-08 15:03:20.045 [job-0] INFO  JobContainer - DataX Writer.Job [txtfilewriter] splits to [1] tasks.
+2024-05-08 15:03:20.092 [job-0] INFO  JobContainer - jobContainer starts to do schedule ...
+2024-05-08 15:03:20.098 [job-0] INFO  JobContainer - Scheduler starts [1] taskGroups.
+2024-05-08 15:03:20.100 [job-0] INFO  JobContainer - Running by standalone Mode.
+2024-05-08 15:03:20.109 [taskGroup-0] INFO  TaskGroupContainer - taskGroupId=[0] start [1] channels for [1] tasks.
+2024-05-08 15:03:20.116 [taskGroup-0] INFO  Channel - Channel set byte_speed_limit to -1, No bps activated.
+2024-05-08 15:03:20.117 [taskGroup-0] INFO  Channel - Channel set record_speed_limit to -1, No tps activated.
+2024-05-08 15:03:20.139 [taskGroup-0] INFO  TaskGroupContainer - taskGroup[0] taskId[0] attemptCount[1] is started
+2024-05-08 15:03:20.141 [0-0-0-writer] INFO  TxtFileWriter$Task - begin do write...
+2024-05-08 15:03:20.142 [0-0-0-writer] INFO  TxtFileWriter$Task - write to file : [/Users/pengcheng/Downloads/datax/bin/safety_center-safety_alarm-20240401000000-20240501000000__8f790bd7_bf9f_4818_89b0_96b3e07ce32d]
+2024-05-08 15:03:21.533 [0-0-0-writer] INFO  TxtFileWriter$Task - end do write
+2024-05-08 15:03:21.604 [taskGroup-0] INFO  TaskGroupContainer - taskGroup[0] taskId[0] is successed, used[1465]ms
+2024-05-08 15:03:21.609 [taskGroup-0] INFO  TaskGroupContainer - taskGroup[0] completed it's tasks.
+2024-05-08 15:03:30.159 [job-0] INFO  StandAloneJobContainerCommunicator - Total 10240 records, 505902 bytes | Speed 49.40KB/s, 1024 records/s | Error 0 records, 0 bytes |  All Task WaitWriterTime 0.089s |  All Task WaitReaderTime 1.188s | Percentage 100.00%
+2024-05-08 15:03:30.162 [job-0] INFO  AbstractScheduler - Scheduler accomplished all tasks.
+2024-05-08 15:03:30.173 [job-0] INFO  JobContainer - DataX Writer.Job [txtfilewriter] do post work.
+2024-05-08 15:03:30.181 [job-0] INFO  JobContainer - DataX Reader.Job [tdengine20reader] do post work.
+2024-05-08 15:03:30.182 [job-0] INFO  JobContainer - DataX jobId [0] completed successfully.
+2024-05-08 15:03:30.190 [job-0] INFO  HookInvoker - No hook invoked, because base dir not exists or is a file: /Users/pengcheng/Downloads/datax/hook
+2024-05-08 15:03:30.197 [job-0] INFO  JobContainer - 
+	 [total cpu info] => 
+		averageCpu                     | maxDeltaCpu                    | minDeltaCpu                    
+		-1.00%                         | -1.00%                         | -1.00%
+                        
+
+	 [total gc info] => 
+		 NAME                 | totalGCCount       | maxDeltaGCCount    | minDeltaGCCount    | totalGCTime        | maxDeltaGCTime     | minDeltaGCTime     
+		 PS MarkSweep         | 0                  | 0                  | 0                  | 0.000s             | 0.000s             | 0.000s             
+		 PS Scavenge          | 0                  | 0                  | 0                  | 0.000s             | 0.000s             | 0.000s             
+
+2024-05-08 15:03:30.197 [job-0] INFO  JobContainer - PerfTrace not enable!
+2024-05-08 15:03:30.204 [job-0] INFO  StandAloneJobContainerCommunicator - Total 10240 records, 505902 bytes | Speed 49.40KB/s, 1024 records/s | Error 0 records, 0 bytes |  All Task WaitWriterTime 0.089s |  All Task WaitReaderTime 1.188s | Percentage 100.00%
+2024-05-08 15:03:30.210 [job-0] INFO  JobContainer - 
+任务启动时刻                    : 2024-05-08 15:03:19
+任务结束时刻                    : 2024-05-08 15:03:30
+任务总计耗时                    :                 10s
+任务平均流量                    :           49.40KB/s
+记录写入速度                    :           1024rec/s
+读出记录总数                    :               10240
+读写失败总数                    :                   0
+
+
+15:04:00.006 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:05:00.007 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:05:15.238 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+15:05:15.250 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+15:05:22.510 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.6.Final
+15:05:22.540 [main] INFO  c.s.a.DataArchiveToolApplication - [logStarting,55] - Starting DataArchiveToolApplication on pengchengdeMacBook-Pro.local with PID 36632 (/Users/pengcheng/code/idea/framework/data-archive-tool-main/target/classes started by pengcheng in /Users/pengcheng/code/idea/framework/data-archive-tool-main)
+15:05:22.541 [main] INFO  c.s.a.DataArchiveToolApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+15:05:24.075 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+15:05:24.076 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+15:05:24.076 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+15:05:24.144 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+15:05:25.297 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+15:05:25.331 [main] INFO  c.s.a.DataArchiveToolApplication - [logStarted,61] - Started DataArchiveToolApplication in 3.189 seconds (JVM running for 3.963)
+15:06:00.017 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:06:00.080 [scheduling-1] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+15:06:00.677 [scheduling-1] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+15:07:00.007 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:08:00.006 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:08:36.314 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:08:36.985 [http-nio-8080-exec-1] INFO  c.s.a.t.g.GenerateArchiveTasksService - [generateArchiveTasks,84] - [BIZ] >>>>>>>>>>>>>>>> 成功生成1个归档任务
+15:08:57.464 [http-nio-8080-exec-3] INFO  c.s.a.t.g.GenerateArchiveTasksService - [generateArchiveTasks,84] - [BIZ] >>>>>>>>>>>>>>>> 成功生成1个归档任务
+15:09:00.007 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:09:39.539 [http-nio-8080-exec-4] INFO  c.s.a.t.e.ExecuteArchiveTasksService - [executeArchiveTasks,50] - [BIZ] 扫描到1条，需要执行的归档任务
+15:09:39.902 [ForkJoinPool.commonPool-worker-1] INFO  c.s.a.t.e.ShellCommandActuator - [execCmd,146] - [BIZ] 开始执行Shell脚本：shellCmd:sh -c /Users/pengcheng/code/idea/framework/data-archive-tool-main/shell/f24410d1-656f-43cc-b7cf-dca77e4007814.sh
+15:09:42.637 [ForkJoinPool.commonPool-worker-1] INFO  c.s.a.t.e.ExecuteArchiveTasksService - [executeShellCmd,120] - [BIZ] 任务ID104,已经执行完成，执行结果：ERROR，持续时间：2.576842875，执行日志：
+cn.hutool.core.io.IORuntimeException: Wed May 08 15:09:41 GMT+08:00 2024 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+
+15:10:00.008 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:11:00.006 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:12:00.004 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:13:00.006 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:14:00.005 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:15:00.006 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:16:00.009 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:17:00.009 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:18:00.007 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:18:09.487 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+15:18:09.504 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+15:18:17.575 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.6.Final
+15:18:17.599 [main] INFO  c.s.a.DataArchiveToolApplication - [logStarting,55] - Starting DataArchiveToolApplication on pengchengdeMacBook-Pro.local with PID 37388 (/Users/pengcheng/code/idea/framework/data-archive-tool-main/target/classes started by pengcheng in /Users/pengcheng/code/idea/framework/data-archive-tool-main)
+15:18:17.601 [main] INFO  c.s.a.DataArchiveToolApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+15:18:19.228 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+15:18:19.229 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+15:18:19.229 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+15:18:19.289 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+15:18:20.338 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+15:18:20.377 [main] INFO  c.s.a.DataArchiveToolApplication - [logStarted,61] - Started DataArchiveToolApplication in 3.188 seconds (JVM running for 3.944)
+15:18:40.134 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:18:40.209 [http-nio-8080-exec-2] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+15:18:40.760 [http-nio-8080-exec-2] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+15:18:41.416 [http-nio-8080-exec-2] INFO  c.s.a.t.g.GenerateArchiveTasksService - [generateArchiveTasks,84] - [BIZ] >>>>>>>>>>>>>>>> 成功生成1个归档任务
+15:19:00.009 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:19:06.810 [http-nio-8080-exec-3] INFO  c.s.a.t.e.ExecuteArchiveTasksService - [executeArchiveTasks,50] - [BIZ] 扫描到1条，需要执行的归档任务
+15:19:07.277 [ForkJoinPool.commonPool-worker-1] INFO  c.s.a.t.e.ShellCommandActuator - [execCmd,146] - [BIZ] 开始执行Shell脚本：shellCmd:sh -c /Users/pengcheng/code/idea/framework/data-archive-tool-main/shell/9c3ef4b1-7e25-4a44-8cf1-a68313e5ed4952.sh
+15:19:20.149 [ForkJoinPool.commonPool-worker-1] INFO  c.s.a.t.e.ExecuteArchiveTasksService - [executeShellCmd,120] - [BIZ] 任务ID105,已经执行完成，执行结果：ERROR，持续时间：12.717122041，执行日志：
+cn.hutool.core.io.IORuntimeException: Wed May 08 15:19:09 GMT+08:00 2024 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Wed May 08 15:19:09 GMT+08:00 2024 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+
+15:20:00.006 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:21:00.016 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:22:00.013 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:22:43.667 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+15:22:43.683 [SpringContextShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+15:22:51.245 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.6.Final
+15:22:51.266 [main] INFO  c.s.a.DataArchiveToolApplication - [logStarting,55] - Starting DataArchiveToolApplication on pengchengdeMacBook-Pro.local with PID 37669 (/Users/pengcheng/code/idea/framework/data-archive-tool-main/target/classes started by pengcheng in /Users/pengcheng/code/idea/framework/data-archive-tool-main)
+15:22:51.268 [main] INFO  c.s.a.DataArchiveToolApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+15:22:52.643 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+15:22:52.644 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+15:22:52.644 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+15:22:52.705 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+15:22:53.705 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+15:22:53.739 [main] INFO  c.s.a.DataArchiveToolApplication - [logStarted,61] - Started DataArchiveToolApplication in 2.846 seconds (JVM running for 3.56)
+15:23:00.016 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:23:00.037 [scheduling-1] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+15:23:00.577 [scheduling-1] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+15:23:07.926 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:23:08.606 [http-nio-8080-exec-2] INFO  c.s.a.t.g.GenerateArchiveTasksService - [generateArchiveTasks,84] - [BIZ] >>>>>>>>>>>>>>>> 成功生成1个归档任务
+15:23:31.527 [http-nio-8080-exec-3] INFO  c.s.a.t.e.ExecuteArchiveTasksService - [executeArchiveTasks,50] - [BIZ] 扫描到1条，需要执行的归档任务
+15:23:31.947 [ForkJoinPool.commonPool-worker-1] INFO  c.s.a.t.e.ShellCommandActuator - [execCmd,146] - [BIZ] 开始执行Shell脚本：shellCmd:sh -c /Users/pengcheng/code/idea/framework/data-archive-tool-main/shell/131ef999-03ea-45eb-9d2b-1c54534192a725.sh
+15:23:44.496 [ForkJoinPool.commonPool-worker-1] INFO  c.s.a.t.e.ExecuteArchiveTasksService - [executeShellCmd,120] - [BIZ] 任务ID106,已经执行完成，执行结果：SUCCESS，持续时间：12.428138，执行日志：
+
+DataX (DATAX-OPENSOURCE-3.0), From Alibaba !
+Copyright (C) 2010-2017, Alibaba Group. All Rights Reserved.
+
+
+2024-05-08 15:23:33.129 [main] INFO  MessageSource - JVM TimeZone: GMT+08:00, Locale: zh_CN
+2024-05-08 15:23:33.133 [main] INFO  MessageSource - use Locale: zh_CN timeZone: sun.util.calendar.ZoneInfo[id="GMT+08:00",offset=28800000,dstSavings=0,useDaylight=false,transitions=0,lastRule=null]
+2024-05-08 15:23:33.160 [main] INFO  VMInfo - VMInfo# operatingSystem class => sun.management.OperatingSystemImpl
+2024-05-08 15:23:33.172 [main] INFO  Engine - the machine info  => 
+
+	osInfo:	Mac OS X x86_64 10.16
+	jvmInfo:	Oracle Corporation 1.8 25.211-b12
+	cpu num:	8
+
+	totalPhysicalMemory:	-0.00G
+	freePhysicalMemory:	-0.00G
+	maxFileDescriptorCount:	-1
+	currentOpenFileDescriptorCount:	-1
+
+	GC Names	[PS MarkSweep, PS Scavenge]
+
+	MEMORY_NAME                    | allocation_size                | init_size                      
+	PS Eden Space                  | 256.00MB                       | 256.00MB                       
+	Code Cache                     | 240.00MB                       | 2.44MB                         
+	Compressed Class Space         | 1,024.00MB                     | 0.00MB                         
+	PS Survivor Space              | 42.50MB                        | 42.50MB                        
+	PS Old Gen                     | 683.00MB                       | 683.00MB                       
+	Metaspace                      | -0.00MB                        | 0.00MB                         
+
+
+2024-05-08 15:23:33.190 [main] INFO  Engine - 
+{
+	"content":[
+		{
+			"reader":{
+				"name":"mysqlreader",
+				"parameter":{
+					"username":"smlkcap",
+					"password":"********************************",
+					"connection":[
+						{
+							"querySql":[
+								"select id, business_type, business_id, province, city, district, replace(address, ',', '，'), address_type, lon, lat, sort, delete_flag, null_work from business_address_bak where id <= 1000;"
+							],
+							"jdbcUrl":[
+								"jdbc:mysql://10.128.29.232:3306/smart_transport?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false"
+							]
+						}
+					]
+				}
+			},
+			"writer":{
+				"name":"txtfilewriter",
+				"parameter":{
+					"path":"/Users/pengcheng",
+					"fileName":"smart_transport--20240508152308",
+					"writeMode":"truncate",
+					"dateFormat":"yyyy-MM-dd HH:mm:ss",
+					"fileFormat":"csv",
+					"nullFormat":"\\N"
+				}
+			}
+		}
+	],
+	"setting":{
+		"speed":{
+			"channel":3
+		}
+	}
+}
+
+2024-05-08 15:23:33.215 [main] INFO  PerfTrace - PerfTrace traceId=job_-1, isEnable=false
+2024-05-08 15:23:33.216 [main] INFO  JobContainer - DataX jobContainer starts job.
+2024-05-08 15:23:33.219 [main] INFO  JobContainer - Set jobId = 0
+2024-05-08 15:23:34.081 [job-0] INFO  OriginalConfPretreatmentUtil - Available jdbcUrl:jdbc:mysql://10.128.29.232:3306/smart_transport?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false&yearIsDateType=false&zeroDateTimeBehavior=convertToNull&tinyInt1isBit=false&rewriteBatchedStatements=true.
+2024-05-08 15:23:34.170 [job-0] INFO  JobContainer - jobContainer starts to do prepare ...
+2024-05-08 15:23:34.171 [job-0] INFO  JobContainer - DataX Reader.Job [mysqlreader] do prepare work .
+2024-05-08 15:23:34.171 [job-0] INFO  JobContainer - DataX Writer.Job [txtfilewriter] do prepare work .
+2024-05-08 15:23:34.171 [job-0] INFO  TxtFileWriter$Job - 由于您配置了writeMode truncate, 开始清理 [/Users/pengcheng] 下面以 [smart_transport--20240508152308] 开头的内容
+2024-05-08 15:23:34.174 [job-0] INFO  JobContainer - jobContainer starts to do split ...
+2024-05-08 15:23:34.175 [job-0] INFO  JobContainer - Job set Channel-Number to 3 channels.
+2024-05-08 15:23:34.177 [job-0] INFO  JobContainer - DataX Reader.Job [mysqlreader] splits to [1] tasks.
+2024-05-08 15:23:34.178 [job-0] INFO  TxtFileWriter$Job - begin do split...
+2024-05-08 15:23:34.207 [job-0] INFO  TxtFileWriter$Job - splited write file name:[smart_transport--20240508152308__42febbd8_e00a_46a9_b68c_ecbefdac89c4]
+2024-05-08 15:23:34.208 [job-0] INFO  TxtFileWriter$Job - end do split.
+2024-05-08 15:23:34.208 [job-0] INFO  JobContainer - DataX Writer.Job [txtfilewriter] splits to [1] tasks.
+2024-05-08 15:23:34.245 [job-0] INFO  JobContainer - jobContainer starts to do schedule ...
+2024-05-08 15:23:34.250 [job-0] INFO  JobContainer - Scheduler starts [1] taskGroups.
+2024-05-08 15:23:34.251 [job-0] INFO  JobContainer - Running by standalone Mode.
+2024-05-08 15:23:34.257 [taskGroup-0] INFO  TaskGroupContainer - taskGroupId=[0] start [1] channels for [1] tasks.
+2024-05-08 15:23:34.264 [taskGroup-0] INFO  Channel - Channel set byte_speed_limit to -1, No bps activated.
+2024-05-08 15:23:34.264 [taskGroup-0] INFO  Channel - Channel set record_speed_limit to -1, No tps activated.
+2024-05-08 15:23:34.273 [taskGroup-0] INFO  TaskGroupContainer - taskGroup[0] taskId[0] attemptCount[1] is started
+2024-05-08 15:23:34.273 [0-0-0-writer] INFO  TxtFileWriter$Task - begin do write...
+2024-05-08 15:23:34.274 [0-0-0-writer] INFO  TxtFileWriter$Task - write to file : [/Users/pengcheng/smart_transport--20240508152308__42febbd8_e00a_46a9_b68c_ecbefdac89c4]
+2024-05-08 15:23:34.276 [0-0-0-reader] INFO  CommonRdbmsReader$Task - Begin to read record by Sql: [select id, business_type, business_id, province, city, district, replace(address, ',', '，'), address_type, lon, lat, sort, delete_flag, null_work from business_address_bak where id <= 1000;
+] jdbcUrl:[jdbc:mysql://10.128.29.232:3306/smart_transport?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false&yearIsDateType=false&zeroDateTimeBehavior=convertToNull&tinyInt1isBit=false&rewriteBatchedStatements=true].
+2024-05-08 15:23:34.802 [0-0-0-reader] INFO  CommonRdbmsReader$Task - Finished read record by Sql: [select id, business_type, business_id, province, city, district, replace(address, ',', '，'), address_type, lon, lat, sort, delete_flag, null_work from business_address_bak where id <= 1000;
+] jdbcUrl:[jdbc:mysql://10.128.29.232:3306/smart_transport?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false&yearIsDateType=false&zeroDateTimeBehavior=convertToNull&tinyInt1isBit=false&rewriteBatchedStatements=true].
+2024-05-08 15:23:34.911 [0-0-0-writer] INFO  TxtFileWriter$Task - end do write
+2024-05-08 15:23:35.014 [taskGroup-0] INFO  TaskGroupContainer - taskGroup[0] taskId[0] is successed, used[743]ms
+2024-05-08 15:23:35.015 [taskGroup-0] INFO  TaskGroupContainer - taskGroup[0] completed it's tasks.
+2024-05-08 15:23:44.284 [job-0] INFO  StandAloneJobContainerCommunicator - Total 1 records, 74 bytes | Speed 7B/s, 0 records/s | Error 0 records, 0 bytes |  All Task WaitWriterTime 0.000s |  All Task WaitReaderTime 0.603s | Percentage 100.00%
+2024-05-08 15:23:44.289 [job-0] INFO  AbstractScheduler - Scheduler accomplished all tasks.
+2024-05-08 15:23:44.294 [job-0] INFO  JobContainer - DataX Writer.Job [txtfilewriter] do post work.
+2024-05-08 15:23:44.295 [job-0] INFO  JobContainer - DataX Reader.Job [mysqlreader] do post work.
+2024-05-08 15:23:44.295 [job-0] INFO  JobContainer - DataX jobId [0] completed successfully.
+2024-05-08 15:23:44.296 [job-0] INFO  HookInvoker - No hook invoked, because base dir not exists or is a file: /Users/pengcheng/Downloads/datax/hook
+2024-05-08 15:23:44.308 [job-0] INFO  JobContainer - 
+	 [total cpu info] => 
+		averageCpu                     | maxDeltaCpu                    | minDeltaCpu                    
+		-1.00%                         | -1.00%                         | -1.00%
+                        
+
+	 [total gc info] => 
+		 NAME                 | totalGCCount       | maxDeltaGCCount    | minDeltaGCCount    | totalGCTime        | maxDeltaGCTime     | minDeltaGCTime     
+		 PS MarkSweep         | 0                  | 0                  | 0                  | 0.000s             | 0.000s             | 0.000s             
+		 PS Scavenge          | 0                  | 0                  | 0                  | 0.000s             | 0.000s             | 0.000s             
+
+2024-05-08 15:23:44.308 [job-0] INFO  JobContainer - PerfTrace not enable!
+2024-05-08 15:23:44.312 [job-0] INFO  StandAloneJobContainerCommunicator - Total 1 records, 74 bytes | Speed 7B/s, 0 records/s | Error 0 records, 0 bytes |  All Task WaitWriterTime 0.000s |  All Task WaitReaderTime 0.603s | Percentage 100.00%
+2024-05-08 15:23:44.316 [job-0] INFO  JobContainer - 
+任务启动时刻                    : 2024-05-08 15:23:33
+任务结束时刻                    : 2024-05-08 15:23:44
+任务总计耗时                    :                 11s
+任务平均流量                    :                7B/s
+记录写入速度                    :              0rec/s
+读出记录总数                    :                   1
+读写失败总数                    :                   0
+
+
+15:24:00.002 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:25:00.012 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:26:00.007 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:27:00.008 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:28:00.005 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:28:41.608 [http-nio-8080-exec-6] INFO  c.s.a.t.g.GenerateArchiveTasksService - [generateArchiveTasks,84] - [BIZ] >>>>>>>>>>>>>>>> 成功生成1个归档任务
+15:29:00.007 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:30:00.005 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:31:00.007 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:32:00.005 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:33:00.007 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:34:00.006 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:35:00.009 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:36:00.008 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:37:00.008 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:38:00.044 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:39:00.013 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:40:00.007 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:41:00.013 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:42:00.010 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:43:00.000 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:44:00.003 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:45:00.017 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:46:00.004 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:47:00.007 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:48:00.008 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:49:00.001 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:50:00.006 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:51:00.008 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:52:00.007 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:53:00.008 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:54:00.018 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:55:00.007 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:56:00.013 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:57:00.012 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:58:00.002 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+15:59:00.010 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+16:00:00.006 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+16:01:00.005 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+16:02:00.002 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+16:03:00.004 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+16:04:00.008 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+16:05:00.006 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+16:06:00.007 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+16:07:00.009 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+16:08:00.004 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+16:09:00.003 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+16:10:00.006 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+16:11:00.009 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+16:12:00.009 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+16:13:00.005 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+16:14:00.004 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+16:15:00.006 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+16:16:00.005 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+16:17:00.010 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+16:18:00.007 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+16:19:00.003 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+16:20:00.008 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+16:21:00.006 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+16:22:00.002 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+16:23:00.007 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+16:24:00.008 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务
+16:25:00.004 [scheduling-1] INFO  c.s.a.t.GenerateArchiveTasksScheduling - [running,26] - [BIZ] >>>>>>>>>>>>>>>> 开始生成归档任务

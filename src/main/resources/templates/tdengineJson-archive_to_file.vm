@@ -1,0 +1,56 @@
+{
+    "job":
+    {
+        "content":
+        [
+            {
+                "reader":
+                {
+                    "name": "tdengine20reader",
+                    "parameter":
+                    {
+                        "username": "${archiveUser}",
+                        "password": "${archivePwd}",
+                        #if(!$querySql)
+                        "column": [${sourceTableColumn}],
+                        "beginDateTime": "${beginDateTime}",
+                        "endDateTime": "${endDateTime}",
+                        #end
+                        "connection":
+                        [
+                            {
+                                #if(!$querySql)
+                                "table":["${sourceTable}"],
+                                #else
+                                "querySql":["${querySql}"],
+                                #end
+                                "jdbcUrl":
+                                [
+                                    "jdbc:TAOS-RS://${sourceHost}:${sourcePort}/${sourceDb}?timestampFormat=TIMESTAMP"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "writer": {
+                    "name": "txtfilewriter",
+                    "parameter": {
+                        "path": "${archiveFilePath}",
+                        "fileName": "${writeFileName}",
+                        "writeMode": "${writeMode}",
+                        "dateFormat": "yyyy-MM-dd HH:mm:ss",
+                        "fileFormat": "${fileFormat}",
+                        "nullFormat": "\\N"
+                    }
+                }
+            }
+        ],
+        "setting":
+        {
+            "speed":
+            {
+                "channel": 1
+            }
+        }
+    }
+}
