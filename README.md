@@ -172,8 +172,6 @@ curl --location 'localhost:8080/api/archive/config/save' \
 | archive_condition     | 归档条件（where条件）
 | exec_time_window_cron | 执行时间窗口，如：0 0 2 1 * ? *, 表示在每月的1日的凌晨2点执行任务。**如果为空则需要手动出发归档任务**
 | extension_cmd         | 归档扩展命令，可以自己加上特殊的pt-archiver命令
-| begin_date_time       | 归档开始时间(tdengine)
-| end_date_time         | 归档结束时间(tdengine)
 | extension_properties  | 归档配置扩展(application.yml中配置的增强，例子：dataxPath=/Users/pengcheng/Downloads/datax,archiveUser=root,tdengineConfig.batchSize=100)
 | query_sql             | 查询sql（datax, 配置后会忽略 table, column, where, beginDateTime, endDateTime这些配置）
 | .....                 | 略去其他不相关字段
@@ -198,7 +196,7 @@ curl --location 'localhost:8080/api/archive/config/save' \
 | last30DaysStartTimestamp | 过去30天开始时间
 | last30DaysEndTimestamp   | 过去30天开始时间
 
-####（2）查询归档策略列表
+#### （2）查询归档策略列表
 
 ```
 curl --location 'localhost:8080/api/archive/config/list' \
@@ -208,16 +206,16 @@ curl --location 'localhost:8080/api/archive/config/list' \
 }'
 ```
 
-####（3）查询单个归档策略
+#### （3）查询单个归档策略
 
 ```
 curl --location 'localhost:8080/api/archive/config/get?id=3'
 ```
 
-####（4）触发归档任务生成器，生成归档任务
+#### （4）触发归档任务生成器，生成归档任务
 
 - 方式一：归档任务生成器会根据exec_time_window_cron的cron表达式自动生成
-- 方式二：通过API手动触发生成，手动触发分为"触发全部"和"指定ip触发"
+- 方式二：通过API手动触发生成，手动触发分为"触发全部"和"指定ip触发"，响应结果能拿到执行任务的编号。
 
 ```
 curl --location 'localhost:8080/api/archive/tasks/generate'
@@ -227,11 +225,14 @@ curl --location 'localhost:8080/api/archive/tasks/generate'
 curl --location 'localhost:8080/api/archive/tasks/manually/generate?ids=2,3'
 ```
 
-####（5）执行归档任务
+#### （5）执行归档任务
 - 方式一：归档任务执行器，会定时自动执行（大约每5分钟检查一次任务列表）
 - 方式二：通过API手动触发执行
 ```
 curl http://ip:8080/api/archive/tasks/execute
 ```
 
-#### (6) 查看归档任务运行状态
+####  (6) 查看归档任务运行状态
+```
+curl --location 'localhost:8080/api/archive/tasks/execute/status?taskId=114'
+```
