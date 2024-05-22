@@ -13,8 +13,7 @@
                         "password": "${archivePwd}",
                         #if(!$querySql)
                         "column": [${sourceTableColumn}],
-                        "beginDateTime": "${beginDateTime}",
-                        "endDateTime": "${endDateTime}",
+                        "where": "${archiveCondition}",
                         #end
                         "connection":
                         [

@@ -12,6 +12,7 @@ import com.smartlink.archive.infrastructure.db.entity.ArchiveTasksEntity;
 import com.smartlink.archive.infrastructure.db.service.ArchiveConfigService;
 import com.smartlink.archive.infrastructure.db.service.ArchiveTasksService;
 import com.smartlink.archive.infrastructure.utils.LambdaUtil;
+import com.smartlink.archive.infrastructure.utils.LoggerFormat;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -20,9 +21,11 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
+import java.util.stream.Collectors;
 
 /**
  * Created by pengcheng on 2024/4/30.
@@ -41,7 +44,7 @@ public class GenerateArchiveTasksService {
     private TdengineArchiveProperties tdengineArchiveProperties;
 
     @Transactional(rollbackFor = Exception.class)
-    public void generateArchiveTasks() {
+    public List<Integer> generateArchiveTasks() {
 
         // 获取当前需要生成归档任务的归档配置列表
         List<ArchiveConfigEntity> archiveConfigs = archiveConfigService.list(Wrappers
@@ -56,19 +59,29 @@ public class GenerateArchiveTasksService {
             return cronPattern.match(LocalDateTime.now(), false);
         });
 
+        return this.doBuildArchiveTasks(archiveConfigs);
+    }
+
+    private List<Integer> doBuildArchiveTasks(List<ArchiveConfigEntity> archiveConfigs) {
         List<ArchiveTasksEntity> archiveTasksEntities = LambdaUtil.listMapper(archiveConfigs, archiveConfig ->
                 buildArchiveTasksEntity(dataArchiveProperties, tdengineArchiveProperties, archiveConfig));
         if (CollectionUtils.isNotEmpty(archiveTasksEntities)) {
             archiveTasksService.saveBatch(archiveTasksEntities);
-            log.info("[BIZ] >>>>>>>>>>>>>>>> 成功生成{}个归档任务", archiveTasksEntities.size());
+            List<Integer> archiveTaskIds = archiveTasksEntities.stream().map(ArchiveTasksEntity::getId).collect(Collectors.toList());
+            log.info(LoggerFormat.build().remark("成功生成归档任务")
+                    .data("total", archiveTasksEntities.size())
+                    .data("ids", archiveTaskIds)
+                    .finish());
+            return archiveTaskIds;
         } else {
             log.error("[BIZ] >>>>>>>>>>>>>>>> 当前没有归档任务需要生成");
         }
 
+        return Collections.emptyList();
     }
 
     @Transactional(rollbackFor = Exception.class)
-    public void generateArchiveTasks(List<Integer> ids) {
+    public List<Integer> generateArchiveTasks(List<Integer> ids) {
 
         // 获取当前需要生成归档任务的归档配置列表
         List<ArchiveConfigEntity> archiveConfigs = archiveConfigService.list(Wrappers
@@ -77,15 +90,7 @@ public class GenerateArchiveTasksService {
                 .eq(ArchiveConfigEntity::getIsEnable, ArchiveConfigConstants.TURN_ON)
         );
 
-        List<ArchiveTasksEntity> archiveTasksEntities = LambdaUtil.listMapper(archiveConfigs, archiveConfig ->
-                buildArchiveTasksEntity(dataArchiveProperties, tdengineArchiveProperties, archiveConfig));
-        if (CollectionUtils.isNotEmpty(archiveTasksEntities)) {
-            archiveTasksService.saveBatch(archiveTasksEntities);
-            log.info("[BIZ] >>>>>>>>>>>>>>>> 成功生成{}个归档任务", archiveTasksEntities.size());
-        } else {
-            log.error("[BIZ] >>>>>>>>>>>>>>>> 当前没有归档任务需要生成");
-        }
-
+        return this.doBuildArchiveTasks(archiveConfigs);
     }
 
     private ArchiveTasksEntity buildArchiveTasksEntity(DataArchiveProperties dataArchiveProperties, TdengineArchiveProperties tdengineArchiveProperties, ArchiveConfigEntity archiveConfig) {

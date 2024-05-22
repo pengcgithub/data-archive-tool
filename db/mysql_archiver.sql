@@ -1,22 +1,7 @@
-/*
- Navicat Premium Data Transfer
 
- Source Server         : 192.168.3.15
- Source Server Type    : MySQL
- Source Server Version : 50717
- Source Host           : 192.168.3.15:3306
- Source Schema         : mysql_archiver
+CREATE DATABASE IF NOT EXISTS `data_archiver` DEFAULT CHARACTER SET utf8 collate utf8_unicode_ci;
 
- Target Server Type    : MySQL
- Target Server Version : 50717
- File Encoding         : 65001
-
- Date: 26/08/2022 09:52:50
-*/
-
-CREATE DATABASE IF NOT EXISTS `mysql_archiver` DEFAULT CHARACTER SET utf8 collate utf8_unicode_ci;
-
-USE `mysql_archiver`;
+USE `data_archiver`;
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
@@ -33,16 +18,16 @@ create table archive_config
     source_port           int                                    not null comment '源服务器端口',
     source_db             varchar(64)                            not null comment '源数据库schema',
     source_table          varchar(128)                           not null comment '源数据库表',
-    source_table_column   varchar(512)                           null comment '源数据表字段，多个用英文逗号隔开',
     dest_host             varchar(64)                            not null comment '目标服务器',
     dest_port             int          default 3306              not null comment '目标服务器端口',
     dest_db               varchar(64)  default ''                not null comment '目标数据库schema',
     dest_table            varchar(128) default ''                not null comment '目标数据库表',
-    dest_table_column     varchar(512)                           null comment '目标数据表字段，多个用英文逗号隔开',
     archive_mode          varchar(20)  default 'ARCHIVE'         not null comment '归档模式：ARCHIVE（归档）,DELETE(只删除不归档)，ARCHIVE_TO_FILE(归档到文件)',
     charset               varchar(20)  default 'UTF8'            not null comment '字符集',
     archive_condition     varchar(255) default ''                not null comment '归档条件',
-    exec_time_window_cron varchar(30)  default ''                not null comment '执行时间窗口（默认空则需要手动触发构建），如：0 0 2 1 * ? *,表示在每月的1日的凌晨2点执行任务。',
+    exec_time_window_cron varchar(30)  default '0 0 2 1 * ? *'   not null comment '执行时间窗口，如：0 0 2 1 * ? *,表示在每月的1日的凌晨2点执行任务
+
+',
     extension_cmd         varchar(255) default ''                null comment '归档扩展命令',
     priority              tinyint      default 1                 null comment '优化级，数值越高，在执行时间窗口的有多个任务时，优先执行',
     sys_ctime             datetime     default CURRENT_TIMESTAMP null comment '创建时间',
@@ -50,9 +35,9 @@ create table archive_config
     is_enable             tinyint      default 0                 null comment '是否开启：1:开启，0:关闭',
     remark                varchar(200)                           null comment '备注信息',
     archive_type          varchar(20)  default 'mysql'           null comment '归档类型',
-    begin_date_time       varchar(32)                            null comment '归档开始时间',
-    end_date_time         varchar(32)                            null comment '归档结束时间',
-    extension_properties  varchar(2048)                          null comment '归档扩展配置，针对application.yml中配置做增强',
+    source_table_column   varchar(512)                           null comment '源数据表字段，多个用英文逗号隔开',
+    dest_table_column     varchar(512)                           null comment '目标数据表字段，多个用英文逗号隔开',
+    extension_properties  varchar(2048)                          null comment '归档扩展配置',
     query_sql             varchar(2048)                          null comment '查询sql（datax, 配置后会忽略 table, column, where, beginDateTime, endDateTime这些配置）'
 )
     comment '归档配置表' charset = utf8;

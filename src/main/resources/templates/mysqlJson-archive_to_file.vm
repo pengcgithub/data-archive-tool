@@ -11,6 +11,10 @@
                     {
                         "username": "${archiveUser}",
                         "password": "${archivePwd}",
+                        #if(!$querySql)
+                        "column": [${sourceTableColumn}],
+                        "where": "${archiveCondition}",
+                        #end
                         "connection":
                         [
                             {

@@ -76,10 +76,6 @@ public class GenerateTdArchiverTemplate {
         String archiveCondition = sub.replace(StringUtils.trim(archiveConfigEntity.getArchiveCondition()));
         param.put("archiveCondition", archiveCondition);
 
-        // 格式化时间类型
-        param.put("beginDateTime", sub.replace(archiveConfigEntity.getBeginDateTime()));
-        param.put("endDateTime", sub.replace(archiveConfigEntity.getEndDateTime()));
-
         // 转换查询条件中的时间
         String querySql = sub.replace(StringUtils.trim(archiveConfigEntity.getQuerySql()));
         param.put("querySql", querySql);

@@ -115,18 +115,6 @@ public class ArchiveConfigEntity implements Serializable {
     private Byte priority;
 
     /**
-     * 开始时间
-     * 默认：tdengine
-     */
-    private String beginDateTime;
-
-    /**
-     * 结束时间
-     * 默认tdengine
-     */
-    private String endDateTime;
-
-    /**
      * 创建时间
      */
     private Date sysCtime;

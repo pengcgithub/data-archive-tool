@@ -82,9 +82,9 @@ public class ArchiveController {
      * @return true
      */
     @GetMapping("/tasks/generate")
-    public JsonResult<Boolean> generateArchiveTasks() {
-        generateArchiveTasksService.generateArchiveTasks();
-        return JsonResult.buildSuccess();
+    public JsonResult<List<Integer>> generateArchiveTasks() {
+        List<Integer> archiveTaskIds = generateArchiveTasksService.generateArchiveTasks();
+        return JsonResult.buildSuccess(archiveTaskIds);
     }
 
     /**
@@ -93,10 +93,10 @@ public class ArchiveController {
      * @return true
      */
     @GetMapping("/tasks/manually/generate")
-    public JsonResult<Boolean> generateArchiveTasks(@RequestParam("ids") String ids) {
+    public JsonResult<List<Integer>> generateArchiveTasks(@RequestParam("ids") String ids) {
         List<Integer> idList = Stream.of(ids.split(",")).map(Integer::valueOf).collect(Collectors.toList());
-        generateArchiveTasksService.generateArchiveTasks(idList);
-        return JsonResult.buildSuccess();
+        List<Integer> archiveTaskIds = generateArchiveTasksService.generateArchiveTasks(idList);
+        return JsonResult.buildSuccess(archiveTaskIds);
     }
 
     /**
