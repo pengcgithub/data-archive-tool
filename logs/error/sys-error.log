@@ -1,5 +1,0 @@
-14:40:01.317 [scheduling-1] ERROR c.s.a.t.g.GenerateArchiveTasksService - [generateArchiveTasks,65] - [BIZ] >>>>>>>>>>>>>>>> 当前没有归档任务需要生成
-14:41:00.184 [scheduling-1] ERROR c.s.a.t.g.GenerateArchiveTasksService - [generateArchiveTasks,65] - [BIZ] >>>>>>>>>>>>>>>> 当前没有归档任务需要生成
-14:42:00.260 [scheduling-1] ERROR c.s.a.t.g.GenerateArchiveTasksService - [generateArchiveTasks,65] - [BIZ] >>>>>>>>>>>>>>>> 当前没有归档任务需要生成
-14:43:00.174 [scheduling-1] ERROR c.s.a.t.g.GenerateArchiveTasksService - [generateArchiveTasks,65] - [BIZ] >>>>>>>>>>>>>>>> 当前没有归档任务需要生成
-14:44:00.174 [scheduling-1] ERROR c.s.a.t.g.GenerateArchiveTasksService - [generateArchiveTasks,65] - [BIZ] >>>>>>>>>>>>>>>> 当前没有归档任务需要生成
