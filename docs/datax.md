@@ -7,9 +7,17 @@ alibaba提供的数据同步的中间件，具体参考[DataX](https://github.co
 由于tdengine的版本限制，无法直接使用alibaba官网的datax项目，需要依赖于taosdata用户下frock的项目。
 [taosdata-datax](https://github.com/taosdata/DataX/blob/master/tdengine20writer/doc/tdengine20writer-CN.md)
 
-#### 编译tasdata-datax
+#### 编译taosdata-datax
+
+```
+mvn -U clean package assembly:assembly -Dmaven.test.skip=true
+```
+
+由于验证过程中发现拼接的表名存在问题，所以对源码做了下列的修改：
+![数据归档组件架构](../img/taosdatax修改点.png)
 
 #### 编译后jar拷贝到服务器
+
 
 ### 参考资料
 
