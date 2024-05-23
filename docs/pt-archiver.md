@@ -47,6 +47,11 @@ rpm -ivh percona-toolkit-3.4.0-3.el7.x86_64.rpm
 pt-archiver --version
 ```
 
+- 查看pt-archiver安装目录
+```
+rpm -ql percona-toolkit
+```
+
 ### 使用Percona Toolkit
 
 ```shell
