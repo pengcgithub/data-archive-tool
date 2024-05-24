@@ -3,6 +3,7 @@ package com.smartlink.archive.task.generate;
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.date.DatePattern;
 import cn.hutool.core.date.DateUtil;
+import cn.hutool.core.util.ObjectUtil;
 import com.alibaba.fastjson.JSONObject;
 import com.smartlink.archive.constant.ArchiveConfigConstants;
 import com.smartlink.archive.enums.ArchiveModeEnum;
@@ -100,11 +101,13 @@ public class GeneratePtArchiverCmd {
             JSONObject jsonObject = JsonUtils.toJson(extensionProperties);
             DataArchiveProperties dataArchive = jsonObject.toJavaObject(DataArchiveProperties.class);
             Map<String, Object> extensionParam = BeanUtil.beanToMap(dataArchive, false, true);
+            extensionParam.put("notFirst", true);
 
             initArchiveConfig(extensionParam, dataArchive, archiveConfigEntity);
             initArchiveToFileConfig(extensionParam, dataArchive, archiveConfigEntity);
             initDeleteConfig(extensionParam, dataArchive, archiveConfigEntity);
 
+            extensionParam.entrySet().removeIf(entry -> entry.getValue() == null);
             param.putAll(extensionParam);
         }
 
@@ -122,6 +125,11 @@ public class GeneratePtArchiverCmd {
         }
 
         param.putAll(BeanUtil.beanToMap(deleteConfig));
+
+        // 如果非首次初始化，则不需要实例化默认值
+        if (ObjectUtil.isNotNull(param.getOrDefault("notFirst", null))) {
+            return;
+        }
 
         // 填充默认的批量每次归档的数据数量
         if (StringUtils.isBlank(deleteConfig.getBatchSize())) {
@@ -145,9 +153,15 @@ public class GeneratePtArchiverCmd {
 
         param.putAll(BeanUtil.beanToMap(archiveToFileConfig));
 
+        // 如果非首次初始化，则不需要实例化默认值
+        if (ObjectUtil.isNotNull(param.getOrDefault("notFirst", null))) {
+            return;
+        }
+
         // 导出的文件名称
         String nowTime = DateUtil.format(new Date(), DatePattern.PURE_DATETIME_FORMAT);
-        String writeFileName = String.join("-", archiveConfigEntity.getSourceDb(), archiveConfigEntity.getSourceTable(),
+        String writeFileName = String.join("-", archiveConfigEntity.getSourceDb(),
+                StringUtils.defaultString(archiveConfigEntity.getSourceTable(), "table"),
                 String.valueOf(archiveConfigEntity.getId()), nowTime);
         param.put("writeFileName", writeFileName);
 
@@ -190,11 +204,15 @@ public class GeneratePtArchiverCmd {
 
         ArchiveConfig archiveConfig = dataArchiveProperties.getArchiveConfig();
         if (Objects.isNull(archiveConfig) || !StringUtils.equalsIgnoreCase(ArchiveModeEnum.ARCHIVE.name(), archiveConfigEntity.getArchiveMode())) {
-//            defaultConfig(param);
             return;
         }
 
         param.putAll(BeanUtil.beanToMap(archiveConfig));
+
+        // 如果非首次初始化，则不需要实例化默认值
+        if (ObjectUtil.isNotNull(param.getOrDefault("notFirst", null))) {
+            return;
+        }
 
         // 填充默认的批量每次归档的数据数量
         if (StringUtils.isBlank(archiveConfig.getBatchSize())) {

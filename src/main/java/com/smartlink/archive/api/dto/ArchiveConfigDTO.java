@@ -131,6 +131,13 @@ public class ArchiveConfigDTO implements Serializable {
     private String extensionCmd;
 
     /**
+     * 扩展配置
+     * @see com.smartlink.archive.infrastructure.config.DataArchiveProperties
+     * @see com.smartlink.archive.infrastructure.config.TdengineArchiveProperties
+     */
+    private String extensionProperties;
+
+    /**
      * 查询sql（datax, 配置后会忽略 table, column, where, beginDateTime, endDateTime这些配置）
      */
     private String querySql;

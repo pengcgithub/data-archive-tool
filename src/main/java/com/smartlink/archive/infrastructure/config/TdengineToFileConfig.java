@@ -31,7 +31,7 @@ public class TdengineToFileConfig {
     /**
      * 读取文件的编码配置。
      */
-    private String encoding = "utf-8";
+    private String encoding;
 
     /**
      * 日期类型的数据序列化到文件中时的格式，例如 "dateFormat": "yyyy-MM-dd"
@@ -42,7 +42,7 @@ public class TdengineToFileConfig {
      * 文件写出的格式，包括csv和text两种
      * 默认值：text
      */
-    private String fileFormat = "csv";
+    private String fileFormat;
 
     /**
      * 归档文件地址

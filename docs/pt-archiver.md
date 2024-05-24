@@ -64,3 +64,4 @@ pt-archiver \
 
 ### 参考资料
 - [https://docs.percona.com/percona-toolkit/pt-archiver.html](https://docs.percona.com/percona-toolkit/pt-archiver.html)
+- [pt-archiver参数](https://www.yisu.com/jc/30741.html)

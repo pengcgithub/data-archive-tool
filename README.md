@@ -147,7 +147,7 @@ curl --location 'localhost:8080/api/archive/config/save' \
             "isEnable": 1,
             "remark": null,
             "extensionCmd": "--no-delete --ask-pass",
-            "extension_properties": "dataxPath=/Users/pengcheng/Downloads/datax,archiveUser=root,tdengineConfig.batchSize=100",
+            "extensionProperties": "dataxPath=/Users/pengcheng/Downloads/datax,archiveUser=root,tdengineConfig.batchSize=100",
             "querySql":"select id, business_type, business_id, province, city, district, replace(address, ',', '，'), address_type, lon, lat, sort, delete_flag, null_work from business_address_bak where id <= 1000;"
         }'
 ```

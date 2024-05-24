@@ -54,7 +54,7 @@ public class ArchiveToFileConfig {
     /**
      * 读取文件的编码配置。
      */
-    private String encoding = "utf-8";
+    private String encoding;
 
     /**
      * 日期类型的数据序列化到文件中时的格式，例如 "dateFormat": "yyyy-MM-dd"
@@ -67,6 +67,6 @@ public class ArchiveToFileConfig {
      * pt-archive = csv、dump
      * 默认值：csv
      */
-    private String fileFormat = "csv";
+    private String fileFormat;
 
 }
