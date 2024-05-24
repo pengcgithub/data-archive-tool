@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 @Data
 @EnableConfigurationProperties
 @Configuration
-@ConfigurationProperties(prefix = "archive")
+@ConfigurationProperties(prefix = "mysql")
 public class DataArchiveProperties {
 
     /**

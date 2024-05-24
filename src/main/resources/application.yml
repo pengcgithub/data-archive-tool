@@ -8,7 +8,7 @@ spring:
     password: Rx1Tfq3NpkRHCz98aEyN1eKioDR1OMlj
     max-active: 100
 
-archive:
+mysql:
   ## pt-archiver 程序的安装路径
   pt-archiver-path: /opt/homebrew/bin
   ## datax程序的安装路径
