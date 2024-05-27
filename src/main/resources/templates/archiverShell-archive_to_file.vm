@@ -4,4 +4,4 @@ ${ptArchiverPath}/pt-archiver \
 #if($charset.equalsIgnoreCase("none") || !$charset)
 --no-check-charset \
 #end
---limit=${batchSize} --txn-size ${txnSize} --file '${archiveFilePath}/%D-%t-%Y-%m-%d-%H-%i-%s' ${extensionCmd} \
+--limit=${batchSize} --txn-size ${txnSize} --file '${archiveFilePath}/${writeFileName}' ${extensionCmd} \

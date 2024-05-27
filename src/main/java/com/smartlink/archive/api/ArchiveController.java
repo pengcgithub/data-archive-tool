@@ -10,6 +10,8 @@ import com.smartlink.archive.infrastructure.db.entity.ArchiveConfigEntity;
 import com.smartlink.archive.infrastructure.db.entity.ArchiveTasksEntity;
 import com.smartlink.archive.infrastructure.db.service.ArchiveConfigService;
 import com.smartlink.archive.infrastructure.db.service.ArchiveTasksService;
+import com.smartlink.archive.infrastructure.exception.ArchiveBizException;
+import com.smartlink.archive.infrastructure.exception.ArchiveErrorCodeEnum;
 import com.smartlink.archive.infrastructure.utils.JsonResult;
 import com.smartlink.archive.task.execute.ExecuteArchiveTasksService;
 import com.smartlink.archive.task.generate.GenerateArchiveTasksService;
@@ -17,6 +19,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -47,6 +50,24 @@ public class ArchiveController {
     @PostMapping("/config/save")
     public JsonResult<Integer> save(@RequestBody ArchiveConfigDTO request) {
         ArchiveConfigEntity entity = BeanUtil.toBean(request, ArchiveConfigEntity.class);
+        archiveConfigService.saveOrUpdate(entity);
+        return JsonResult.buildSuccess(entity.getId());
+    }
+
+    /**
+     * 操作存档配置状态
+     * @param id 配置编号
+     * @param isEnable 是否启用
+     */
+    @PostMapping("/config/status")
+    public JsonResult<Integer> operateStatus(@RequestParam Integer id, @RequestParam Integer isEnable) {
+        ArchiveConfigEntity entity = archiveConfigService.getById(id);
+        if (ObjectUtil.isEmpty(entity)) {
+            throw new ArchiveBizException(ArchiveErrorCodeEnum.ARCHIVE_CONFIG_NOT_EXIST_ERROR);
+        }
+
+        entity.setIsEnable(isEnable);
+        entity.setSysUtime(new Date());
         archiveConfigService.saveOrUpdate(entity);
         return JsonResult.buildSuccess(entity.getId());
     }

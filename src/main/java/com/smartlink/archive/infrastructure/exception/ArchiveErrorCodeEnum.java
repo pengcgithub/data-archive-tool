@@ -18,10 +18,10 @@ public enum ArchiveErrorCodeEnum implements BaseErrorCodeEnum {
      * +--------+---------+-------+
      * | first  | middle  | last  |
      * +========+=========+=======+
-     * | 16     | 00      | 00    |
+     * | 10     | 01      | 00    |
      * +--------+---------+-------+
      */
-    ORDER_NO_TYPE_ERROR("160000", "订单号类型错误"),
+    ARCHIVE_CONFIG_NOT_EXIST_ERROR("100100", "归档配置不存在"),
 
     ;
 
