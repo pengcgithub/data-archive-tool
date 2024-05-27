@@ -3,9 +3,9 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/smart_transport?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8&allowMultiQueries=true
-    username: smlkcap
-    password: Rx1Tfq3NpkRHCz98aEyN1eKioDR1OMlj
+    url: jdbc:mysql://10.128.29.232:3306/smart_transport?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8&allowMultiQueries=true
+    username: root
+    password: xxx
     max-active: 100
 
 mysql:
@@ -15,9 +15,9 @@ mysql:
   datax-path: /Users/pengcheng/Downloads/datax
   ### 业务数据库和归档数据库都需要创建一个归档账号
   ## 归档账号
-  archive-user: smlkcap
+  archive-user: root
   ## 归档密码
-  archive-pwd: Rx1Tfq3NpkRHCz98aEyN1eKioDR1OMlj
+  archive-pwd: xxx
   archive-config:
     ## 批量每次归档的数据数量
     batch-size: 20000

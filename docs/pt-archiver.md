@@ -56,7 +56,7 @@ rpm -ql percona-toolkit
 
 ```shell
 pt-archiver \
---source h=10.128.29.232,u=smlkcap,p=Rx1Tfq3NpkRHCz98aEyN1eKioDR1OMlj,P=3306,D=smart_transport,t=goods,A=utf8mb4 \
+--source h=127.0.0.1,u=root,p=xxx,P=3306,D=smart_transport,t=goods,A=utf8mb4 \
 --progress 20000 --where "create_time >= '2024-02-01 00:00:00' and create_time <= '2024-05-01 00:00:00'"  --statistics \
 --output-format=csv \
 --limit=20000 --txn-size 500 --file '/opt/%D-%t-%Y-%m-%d-%H-%i-%s.csv' --no-delete --ask-pass
