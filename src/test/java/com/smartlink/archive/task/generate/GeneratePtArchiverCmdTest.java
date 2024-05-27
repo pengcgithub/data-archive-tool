@@ -4,18 +4,18 @@ import com.smartlink.archive.enums.ArchiveModeEnum;
 import com.smartlink.archive.infrastructure.config.ArchiveConfig;
 import com.smartlink.archive.infrastructure.config.DataArchiveProperties;
 import com.smartlink.archive.infrastructure.db.entity.ArchiveConfigEntity;
+import com.smartlink.archive.task.execute.ShellCommandActuator;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * Created by alan on 2022/8/25.
+ * Created by pengcheng on 2024/5/27.
  */
 class GeneratePtArchiverCmdTest {
 
     @Test
     void generateCmd() {
-
         DataArchiveProperties dataArchiveProperties = new DataArchiveProperties();
 
         ArchiveConfig archiveConfig = new ArchiveConfig();
@@ -46,6 +46,14 @@ class GeneratePtArchiverCmdTest {
 
         String cmd = GeneratePtArchiverCmd.generateCmd(dataArchiveProperties, archiveConfigEntity);
         assertThat(cmd).isNotEmpty();
+    }
+
+    @Test
+    void execShell() {
+        String cmd = "sh /Users/pengcheng/archiver.sh";
+        String logs = ShellCommandActuator.exec(cmd);
+        System.out.println("logs:" + logs);
+
     }
 
 }
